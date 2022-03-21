@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.row {
+    display: flex;
+}
+.column {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+
+main {
+    gap: 4rem;
+    justify-content: center;
+    padding: auto;
+    text-align: center;
+    
+}
+header {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: beige;
+}
+
+footer {
+    text-align: center;
+    background-color: beige;
+    padding: 0.5em;
+}
+
+.column.placed {
+    background-color: rgb(134, 53, 39);
+}
+
+.column:hover {
+    background-color: rgb(21, 140, 209);
+}
+
+.column.enter {
+    background-color: rgb(21, 140, 209);
+}
+
+.column.hit {
+    background-color: red;
+}
+
+.column.miss {
+    background-color: blue;
+}
+
+h2 {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1.5em;
+}
+.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.players {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.shipCont {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(124, 124, 236);
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+h3 {
+    color: rgb(136, 20, 20);
+}
+
+#ships {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    padding: 3em 0.5em;
+}
+.shipCont>button {
+    margin: 0.25rem;
+}
+.diagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: none;
+    border: none;
+}
+.diagram.dragging {
+    opacity: 0.5;
+}
+
+.diagram.vertical {
+    display: inline;
+
+}
+
+.box {
+    border: solid;
+    width: 2.5rem;
+    height: 2.5rem;
+    box-sizing: border-box;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+#winner {
+    padding: 1rem;
+}
+.switch {
+	position: relative;
+    display: inline-block;
+    width: 5rem;
+    height: 2.5rem;
+}
+.switch-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(61, 146, 99);
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "\2015";
+    line-height: 2rem;
+    font-size: 2rem;
+    height: 2rem;
+    width: 2rem;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(2.5rem);
+    content: "\2758";
+    line-height: 2rem;
+  }
+#switchCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+main > p {
+    font-size: 3em;
+    padding-top: 1rem;
+}

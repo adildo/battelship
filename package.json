@@ -1,0 +1,29 @@
+{
+  "name": "battelship",
+  "version": "1.0.0",
+  "description": "TOP assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "webpack --watch",
+    "build": "webpack"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adildo/battelship.git"
+  },
+  "author": "Adi Zilberstein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adildo/battelship/issues"
+  },
+  "homepage": "https://github.com/adildo/battelship#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "jest": "^27.5.1",
+    "jest-cli": "^27.5.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
+}

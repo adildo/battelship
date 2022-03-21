@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <title>Battleship</title>
+</head>
+<body>
+    <header>
+        <h1>Battleship</h1>
+    </header>
+    <main>
+        <h1 id='winner'></h1>
+        <div id="switchCont">
+            <span>Horizontal</span>
+            <label class="switch">
+                <input type="checkbox" class="switch-input">
+                <span class="slider" data-left="Horizontal" data-right="Vertical"></span>
+            </label>
+            <span>Vertical</span>
+        </div>
+        <div class="players">
+            <div class="player" id=player1>
+                <h2 class="name"></h2>
+                <div class="playerboard"></div>
+            </div>
+            <div class="player" id=player2>
+                <h2 class="name"></h2>
+                <div class="playerboard"></div>
+            </div>
+            
+        </div>
+        <p id="instructions"> Place ships below on left gameboard</p>
+        <div id="ships"></div>
+    </main>
+    <footer>Adi Zilberstein </footer>
+</body>
+</html>
